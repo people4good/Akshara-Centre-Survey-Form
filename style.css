@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    height: 100dvh;
+    overflow: hidden;
+    /* Zero scroller */
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f6fa;
+    color: #172c4b;
+}
+
+.page-wrapper {
+    width: 100%;
+    height: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(8px, 2vh, 24px) clamp(8px, 2vw, 20px);
+}
+
+.card {
+    width: 100%;
+    max-width: 1000px;
+    max-height: 100%;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.09);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.banner-container {
+    width: 100%;
+    background: #f8be22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    max-height: 48vh;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    max-height: 48vh;
+    display: block;
+    object-fit: contain;
+}
+
+/* Content Area */
+.content {
+    padding: clamp(14px, 2.5vh, 28px) clamp(16px, 3vw, 32px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: clamp(10px, 1.8vh, 18px);
+}
+
+/* Heading in bold Arial */
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(20px, 3.2vh, 29px);
+    font-weight: bold;
+    color: #172c4b;
+    margin: 0;
+    line-height: 1.25;
+}
+
+/* Subtitle in Arial */
+.subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(14px, 2vh, 16px);
+    line-height: 1.6;
+    color: #172c4b;
+}
+
+/* Language Buttons Container */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(10px, 1.8vw, 16px);
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Clean bold buttons as in design */
+.button {
+    flex: 1;
+    min-width: 160px;
+    max-width: 220px;
+    padding: clamp(12px, 1.8vh, 16px) clamp(16px, 2vw, 26px);
+    background: #17345d;
+    color: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(17px, 2.4vh, 20px);
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(23, 52, 93, 0.2);
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+    display: inline-block;
+}
+
+.button:hover {
+    background: #28538b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(23, 52, 93, 0.28);
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+/* Footer in Arial */
+.footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(11.5px, 1.5vh, 13px);
+    color: #58677a;
+    line-height: 1.6;
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+    .page-wrapper {
+        padding: 0;
+    }
+
+    .card {
+        border-radius: 0;
+        box-shadow: none;
+        height: 100%;
+        max-height: 100dvh;
+    }
+
+    .banner-container {
+        max-height: 38vh;
+    }
+
+    .banner-img {
+        max-height: 38vh;
+    }
+
+    .content {
+        padding: clamp(14px, 2.2vh, 22px) 18px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 100%;
+        padding: clamp(12px, 1.8vh, 16px) 20px;
+        font-size: 19px;
+    }
+}

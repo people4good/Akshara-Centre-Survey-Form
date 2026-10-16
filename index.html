@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>BKC Women's Public Transport Survey | Akshara Centre</title>
+
+  <meta name="title" content="BKC Women's Public Transport Survey | Akshara Centre">
+  <meta name="description"
+    content="BKC Women's Public Transport Survey. Choose your preferred language: English, Hindi, or Marathi.">
+  <meta name="theme-color" content="#17345d">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <main class="page-wrapper">
+    <section class="card">
+
+      <div class="banner-container">
+        <img class="banner-img" src="Assets/download.avif" alt="BKC Women's Public Transport Survey Banner">
+      </div>
+      <div class="content">
+        <h1>BKC Women's Public Transport Survey</h1>
+        <p class="subtitle">
+          Choose your preferred language<br>
+          अपनी पसंदीदा भाषा चुनें
+        </p>
+        <div class="buttons">
+          <a class="button"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfzDz0Stm0lyB6KXxmopvxmMUfcyHoxlr7xeiaio7LFkR8axQ/viewform"
+            target="_blank">
+            English
+          </a>
+          <a class="button"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeepeosJzj2Ru_9wwINoN5IdvI6KhujuqyC5GipP5EAeTXFBQ/viewform"
+            target="_blank">
+            हिंदी
+          </a>
+
+          <!-- Marathi Button -->
+          <a class="button" id="marathiBtn"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfzDz0Stm0lyB6KXxmopvxmMUfcyHoxlr7xeiaio7LFkR8axQ/viewform"
+            target="_blank">
+            मराठी
+          </a>
+
+        </div>
+        <p class="footer">
+          A survey by Akshara Centre<br>
+          Your participation is voluntary.<br>
+          आपका भाग लेना स्वैच्छिक है।
+        </p>
+
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Paste your Marathi Google Form URL here when available:
+    const MARATHI_FORM_URL = "";
+    if (MARATHI_FORM_URL.trim() !== "") {
+      const marathiBtn = document.getElementById('marathiBtn');
+      if (marathiBtn) {
+        marathiBtn.href = MARATHI_FORM_URL;
+      }
+    }
+  </script>
+
+</body>
+
+</html>
